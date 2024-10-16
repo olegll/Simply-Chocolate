@@ -36,7 +36,41 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1168px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-paddings {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /*=========header section=========*/
+
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo-link {
   font-weight: 700;
   font-size: 18px;
@@ -48,15 +82,33 @@ img {
   font-style: italic;
 }
 
+.menu-list {
+  display: flex;
+  column-gap: 24px;
+}
+
 .menu-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #fd9222;
 }
 
 /*=========/header section========*/
 /*=========hero-section=========*/
+
+.hero-section {
+  background: #1e1823;
+}
+
 .hero-title {
   font-weight: 500;
   font-size: 28px;
@@ -87,7 +139,11 @@ img {
 }
 /*=========/hero-section=========*/
 /*==========benefits-section=============*/
-.benefits-title {
+
+.benefits-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #1e1823;
 }
 
 .benefits-item-title {
@@ -113,12 +169,32 @@ img {
   text-align: center;
 }
 
+.title-ingredients-section {
+  max-width: 411px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+
 .ingredients-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
+  max-width: 486px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 54px;
+}
+
+.ingredients-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.ingredients-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .ingredients-name {
